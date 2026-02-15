@@ -1,6 +1,8 @@
-describe("SauceDemo Smoke Test", () => {
-  it("opens login page", () => {
-    cy.visit("https://www.saucedemo.com");
-    cy.contains("Swag Labs");
+import loginPage from "../pages/loginPage";
+
+describe("Login Test", () => {
+  it("logs in successfully", () => {
+    loginPage.visit();
+    loginPage.login("standard_user", "secret_sauce");
   });
 });
