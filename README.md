@@ -22,12 +22,14 @@ The goal of this project is to simulate a real e-commerce testing environment an
 
 ## Project Structure
 
+```bash
 cypress/
 ├─ e2e/ # UI test cases
 ├─ e2e/api/ # API test cases
 ├─ pages/ # Page Objects
 ├─ fixtures/ # Test data (optional)
 └─ support/ # Cypress configuration
+```
 
 ---
 
@@ -64,7 +66,9 @@ Using public demo API (JSONPlaceholder):
 
 ## How to Run Tests
 
+```bash
 npx cypress open
+```
 
 ### Install dependencies
 
